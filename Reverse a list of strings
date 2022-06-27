@@ -1,0 +1,10 @@
+Sub reverse_string_range()
+Dim s As Range
+Dim cell As Range
+Set s = Application.Selection
+i = 0
+For Each cell In s
+cell.Offset(0, 1).Value = StrReverse(cell)
+i = i + 1
+Next cell
+End Sub
